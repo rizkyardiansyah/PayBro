@@ -13,7 +13,7 @@ Controller - Setyo(Programmer 1, Designer)
 In short, folder ini merupakan 'View' yang telah diintegrasikan dengan logic dalam bentuk 
 PHP files.
 
-Design - Setyo
+Design - Setyo(Programmer 1, Designer)
 > Di dalam folder ini, terdapat mockup dari setiap fitur aplikasi.
 Selain itu, terdapat pula potongan2 image yang akan digunakan dalam 'View'.
 	<> Ukuran image(dalam px) harus disesuaikan dengan standard dekstop 
