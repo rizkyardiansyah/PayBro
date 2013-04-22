@@ -1,3 +1,5 @@
+LAW
+
 Kita menggunakan Agile Development 'Scrum'.
 
 Model - Ishal(Database Expert, Software Engineer)
