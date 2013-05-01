@@ -21,7 +21,7 @@
 
     </head>
     <body>
-        <img src="res/login/logo.png" alt="PayBro - Cepat, Aman, Bersahabat" style="position:absolute; top:10px; left:70px">
+        <img src="res/img/logo.png" alt="PayBro - Cepat, Aman, Bersahabat" style="position:absolute; top:10px; left:70px">
 
         <div class="container">
             <nav>
