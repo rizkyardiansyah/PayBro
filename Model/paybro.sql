@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 03, 2013 at 04:30 PM
+-- Generation Time: May 11, 2013 at 03:04 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -32,6 +32,23 @@ CREATE TABLE IF NOT EXISTS `account` (
   `roleID` int(11) NOT NULL,
   PRIMARY KEY (`username`),
   KEY `roleID` (`roleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `donation`
+--
+
+CREATE TABLE IF NOT EXISTS `donation` (
+  `recipientID` char(5) NOT NULL,
+  `name` varchar(25) NOT NULL,
+  `description` text NOT NULL,
+  `email` text NOT NULL,
+  `telephone` varchar(20) NOT NULL,
+  `accountNumber` varchar(25) NOT NULL,
+  `amount` int(11) NOT NULL,
+  PRIMARY KEY (`recipientID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -114,9 +131,9 @@ ALTER TABLE `account`
 -- Constraints for table `transaction`
 --
 ALTER TABLE `transaction`
-  ADD CONSTRAINT `transaction_ibfk_3` FOREIGN KEY (`typeID`) REFERENCES `transaction_type` (`typeID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `transaction_ibfk_1` FOREIGN KEY (`payer`) REFERENCES `user` (`username`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `transaction_ibfk_2` FOREIGN KEY (`receiver`) REFERENCES `user` (`username`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `transaction_ibfk_2` FOREIGN KEY (`receiver`) REFERENCES `user` (`username`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `transaction_ibfk_3` FOREIGN KEY (`typeID`) REFERENCES `transaction_type` (`typeID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `user`
