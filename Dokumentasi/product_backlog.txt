@@ -1,10 +1,10 @@
 Product Backlog
-User:
-1. Registrasi
-2. Autentifikasi
-3. User Profile
-4. Isi Saldo Kredit
-5. Transfer Saldo
+User: 
+1. Autentifikasi
+2. User Profile
+3. Isi Saldo Kredit
+4. Transfer Saldo
+5. Registrasi
 6. Log Transaksi
 7. Layanan Donasi
 
@@ -13,3 +13,5 @@ Admin:
 
 Webservice:
 1. Membayar tagihan afiliasi
+
+Security
