@@ -1,0 +1,15 @@
+Product Backlog
+User:
+1. Registrasi
+2. Autentifikasi
+3. User Profile
+4. Isi Saldo Kredit
+5. Transfer Saldo
+6. Log Transaksi
+7. Layanan Donasi
+
+Admin:
+1. CRUD User
+
+Webservice:
+1. Membayar tagihan afiliasi
