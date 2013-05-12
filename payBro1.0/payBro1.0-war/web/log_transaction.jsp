@@ -1,6 +1,6 @@
 <%-- 
-    Document   : home
-    Created on : May 12, 2013, 8:42:20 AM
+    Document   : log_transaction
+    Created on : May 12, 2013, 1:28:42 PM
     Author     : Ardi
 --%>
 
@@ -14,7 +14,7 @@
 
         <meta charset="utf-8">
 
-        <title>PayBro - Beranda</title>
+        <title>PayBro - Log Transaksi</title>
 
         <link rel='stylesheet' href='res/css/styleBro.css'>
 
@@ -30,8 +30,8 @@
         <div class="container">
             <nav>
                 <ul class="nav">
-                    <li class="active"><a href="home.jsp" title="Beranda">Beranda</a></li>
-                    <li><a href="log_transaction.jsp" title="Riwayat Transaksi">Riwayat Transaksi</a></li>
+                    <li><a href="home.jsp" title="Beranda">Beranda</a></li>
+                    <li class="active"><a href="log_transaction.jsp" title="Riwayat Transaksi">Riwayat Transaksi</a></li>
                     <li><a href="refill.jsp" title="Isi Kredit">Isi Kredit</a></li>
                     <li><a href="transfer.jsp" title="Transfer Kredit">Transfer Kredit</a></li>
                     <li><a href="edit.jsp" title="Edit Akun">Edit Akun</a></li>
@@ -63,4 +63,3 @@
         </div>  
     </body>
 </html>
-

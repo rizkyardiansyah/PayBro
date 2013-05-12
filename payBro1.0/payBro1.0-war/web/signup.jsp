@@ -30,13 +30,13 @@
 
             <p id="signup_title"><strong>Formulir Registrasi</strong></p>
 
-            <form action="javascript:void(0);" method="get">
+            <form action="home.jsp" method="post">
 
                 <fieldset>
 
-                    <p><input type="text" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                    <p><input type="text" required name="username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Username" -->
                     <br style="margin: 5px 0;">
-                    <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                    <p><input type="password" required name="password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Password" -->
                     <br>
                     <p><input type="submit" value="Daftar"></p>
 
@@ -48,12 +48,11 @@
         
         <div id ="to_login"> 
             <div id="to_login_title" class="inline"> Sudah punya akun? &nbsp;&nbsp;&nbsp;</div>
-            <form action="javascript:void(0);" method="get" class="inline">
+            <form action="home.jsp" method="post" class="inline">
                 <fieldset class="inline">
                     <input class="inline" id="small" type="submit" value="Masuk">
                 </fieldset>
             </form>
         </div>
-
     </body>
 </html>
