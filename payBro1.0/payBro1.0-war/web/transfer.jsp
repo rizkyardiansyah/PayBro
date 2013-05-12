@@ -61,5 +61,19 @@
             }%>--%>
             
         </div>  
+            
+        <div class="transfer">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <div class="username">
+                        Masukkan <i>username</i> tujuan: &nbsp; <input type="text" required value="username" onBlur="if(this.value=='')this.value='userame'" onFocus="if(this.value=='usernam')this.value='' "> <!-- JS because of IE support; better: placeholder="Reload Code" --> <br><br>
+                    </div>
+                    <div class="amount">
+                        Masukkan nominal <i>transfer</i>: &nbsp; <input type="text" required value="amount" onBlur="if(this.value=='')this.value='amount'" onFocus="if(this.value=='amount')this.value='' "> <!-- JS because of IE support; better: placeholder="Reload Code" --> <br><br>
+                    </div>
+                    <p><input type="submit" value="Kirim"></p>
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>

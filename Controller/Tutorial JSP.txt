@@ -1,0 +1,11 @@
+#JSP School#
+http://www.tutorialspoint.com/jsp/index.htm
+
+#form validation#
+http://stackoverflow.com/questions/8046341/jsp-form-validation-for-numbers-dates-and-values
+
+#file uploading#
+http://www.tutorialspoint.com/jsp/jsp_file_uploading.htm
+
+#image#
+http://stackoverflow.com/questions/5243726/how-to-display-an-image-in-jsp

@@ -38,29 +38,29 @@
                     <li><a href="logout.jsp" title="Keluar">Keluar</a></li>
                 </ul>
             </nav>
-            
-            <%
-                
-                if (request.getParameter("username")!=null) {
-                    String temp = request.getParameter("");
-                %>
-            
-                <%--<jsp:useBean id="newAccount" class="pb.javabean.AccountBean" />
-                <!-- simpan data-data dari form ke objek 'newAccount' -->
-                <jsp:setProperty name="newAccount" property="username" param="username" />
-                <jsp:setProperty name="newAccount" property="password" param="password" />
-
-                <!-- construct objek 'data' -->
-                <jsp:useBean id="data" class="pb.javabean.AccountDataBean" scope="session" />
-                <jsp:getProperty name="newAccount" property="username"/>
-                <jsp:getProperty name="newAccount" property="password"/> --%>
-            <%
-
-            //data.insertAccount(newAccount);
-            //response.sendRedirect("PBServlet");
-            }%>
-            
         </div>  
+            
+        <div class="homeuser">
+            <div class="name">
+                <%= session.getAttribute("username") %><br>
+            </div>
+            <div class="date">
+                Jakarta, 21 Februari 1988<br>
+            </div>
+            <div class="address">
+                Jl. Raya Margonda No.98, Depok, Jawa Barat 14642<br>
+                085777888999 - susi.susanti@ui.ac.id
+            </div>
+        </div>
+            
+        <div class="homesaldo">
+            <div class="title">
+                Saldo Anda:
+            </div>
+            <div class="saldo">
+                Rp. 203,900,000
+            </div>
+        </div>
     </body>
 </html>
 

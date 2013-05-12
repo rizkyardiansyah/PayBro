@@ -60,6 +60,17 @@
                 //response.sendRedirect("PBServlet");
             }%>--%>
             
-        </div>  
+        </div> 
+        
+        <div class="reload">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <div class="title">
+                        Masukkan <i>Reload Code</i>: &nbsp; <input type="text" required value="reload code" onBlur="if(this.value=='')this.value='reload code'" onFocus="if(this.value=='reload code')this.value='' "> <!-- JS because of IE support; better: placeholder="Reload Code" --> <br><br>
+                    </div>
+                    <p><input type="submit" value="Kirim"></p>
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>
