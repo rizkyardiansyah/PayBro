@@ -18,19 +18,39 @@
     </head>
 
     <body>
+        <%
+                
+            if (request.getParameter("username")!=null) {
+                String temp = request.getParameter("");
+            %>
+
+            <%--<jsp:useBean id="newAccount" class="pb.javabean.AccountBean" />
+            <!-- simpan data-data dari form ke objek 'newAccount' -->
+            <jsp:setProperty name="newAccount" property="username" param="username" />
+            <jsp:setProperty name="newAccount" property="password" param="password" />
+
+            <!-- construct objek 'data' -->
+            <jsp:useBean id="data" class="pb.javabean.AccountDataBean" scope="session" />
+            <jsp:getProperty name="newAccount" property="username"/>
+            <jsp:getProperty name="newAccount" property="password"/> --%>
+        <%
+
+        //data.insertAccount(newAccount);
+        //response.sendRedirect("PBServlet");
+        }%>
         <img src="res/img/logo.png" alt="PayBro - Cepat, Aman, Bersahabat" style="position:absolute; top:10px; left:70px">
         <img src="res/img/login_middle.png" alt="Customer Service yang baik hati" style="position:absolute; top:125px">
         <div id="login">
             <p id="login_title"><strong>Selamat Datang,</strong></p>
             <form action="home.jsp" method="post">
                 <fieldset>
-                    <p><input type="text" value="Username" name="username" onBlur="if (this.value == '')
+                    <p><input type="text" placeholder="Username" name="username" onBlur="if (this.value == '')
                                 this.value = 'Username'" onFocus="if (this.value == 'Username')
-                                this.value = ''"></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                                this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
                     <br style="margin: 5px 0;">
-                    <p><input type="password" value="Password" name="password" onBlur="if (this.value == '')
+                    <p><input type="password" placeholder="Password" name="password" onBlur="if (this.value == '')
                                 this.value = 'Password'" onFocus="if (this.value == 'Password')
-                                this.value = ''"></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                                this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
                     <a href="#"><p id="loginForgot">Lupa password?</p></a>
                     <p><input type="submit" value="Masuk"></p>
                 </fieldset>

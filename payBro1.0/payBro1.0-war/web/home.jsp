@@ -39,13 +39,13 @@
                 </ul>
             </nav>
             
-            <%--<%
-                String temp = request.getParameter("username");
-                if (!temp.equals("")) {
+            <%
+                
+                if (request.getParameter("username")!=null) {
+                    String temp = request.getParameter("");
                 %>
             
-                <jsp:useBean id="newAccount" class="pb.javabean.AccountBean" />
-
+                <%--<jsp:useBean id="newAccount" class="pb.javabean.AccountBean" />
                 <!-- simpan data-data dari form ke objek 'newAccount' -->
                 <jsp:setProperty name="newAccount" property="username" param="username" />
                 <jsp:setProperty name="newAccount" property="password" param="password" />
@@ -53,12 +53,12 @@
                 <!-- construct objek 'data' -->
                 <jsp:useBean id="data" class="pb.javabean.AccountDataBean" scope="session" />
                 <jsp:getProperty name="newAccount" property="username"/>
-                <jsp:getProperty name="newAccount" property="password"/> 
-                <%
-           
-                data.insertAccount(newAccount);
-                //response.sendRedirect("PBServlet");
-            }%>--%>
+                <jsp:getProperty name="newAccount" property="password"/> --%>
+            <%
+
+            //data.insertAccount(newAccount);
+            //response.sendRedirect("PBServlet");
+            }%>
             
         </div>  
     </body>

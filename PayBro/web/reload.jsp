@@ -1,6 +1,6 @@
 <%-- 
-    Document   : home
-    Created on : 24-Apr-2013, 13:59:33
+    Document   : reload
+    Created on : 11-May-2013, 14:30:32
     Author     : Fajar Nugroho
 --%>
 
@@ -11,7 +11,7 @@
 
         <meta charset="utf-8">
 
-        <title>PayBro - Beranda</title>
+        <title>PayBro - Isi Kredit</title>
 
         <link rel='stylesheet' href='res/css/styleBro.css'>
 
@@ -26,36 +26,25 @@
         <div class="container">
             <nav>
                 <ul class="nav">
-                    <li class="active"><a href="#" title="Beranda">Beranda</a></li>
+                    <li><a href="#" title="Beranda">Beranda</a></li>
                     <li><a href="#" title="Riwayat Transaksi">Riwayat Transaksi</a></li>
-                    <li><a href="#" title="Isi Kredit">Isi Kredit</a></li>
+                    <li class="active"><a href="#" title="Isi Kredit">Isi Kredit</a></li>
                     <li><a href="#" title="Transfer Kredit">Transfer Kredit</a></li>
                     <li><a href="#" title="Edit Akun">Edit Akun</a></li>
                     <li><a href="#" title="Keluar">Keluar</a></li>
                 </ul>
             </nav>
         </div>
-        
-        <div class="homeuser">
-            <div class="name">
-                Susi Susanti<br>
-            </div>
-            <div class="date">
-                Jakarta, 21 Februari 1988<br>
-            </div>
-            <div class="address">
-                Jl. Raya Margonda No.98, Depok, Jawa Barat 14642<br>
-                085777888999 - susi.susanti@ui.ac.id
-            </div>
+
+        <div class="reload">
+            <form action="javascript:void(0);" method="get">
+                <fieldset>
+                    <div class="title">
+                        Masukkan <i>Reload Code</i>: &nbsp; <input type="text" required value="reload code" onBlur="if(this.value=='')this.value='reload code'" onFocus="if(this.value=='reload code')this.value='' "> <!-- JS because of IE support; better: placeholder="Reload Code" --> <br><br>
+                    </div>
+                    <p><input type="submit" value="Kirim"></p>
+                </fieldset>
+            </form>
         </div>
-        <div class="homesaldo">
-            <div class="title">
-                Saldo Anda:
-            </div>
-            <div class="saldo">
-                Rp. 203,900,000
-            </div>
-        </div>
-        
     </body>
 </html>
